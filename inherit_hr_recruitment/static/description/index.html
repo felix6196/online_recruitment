@@ -1,215 +1,233 @@
 <!DOCTYPE html>
 <head>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/"
-        crossorigin=""></link>
-    <title> HDFC - Pay | Odoo Apps Store </title>
-    <link type="image/x-icon" rel="shortcut icon"
-        href="https://apps.odoocdn.com/web/image/website/1/favicon?unique=89d78f6">
-    </link>
-    <link rel="preload"
-        href="https://apps.odoocdn.com/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
-        as="font" crossorigin=""></link>
-    <link rel="stylesheet"
-        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""></link>
+<title>HDFC - Pay | Odoo Apps Store</title>
+<link type="image/x-icon" rel="shortcut icon"
+	href="https://apps.odoocdn.com/web/image/website/1/favicon?unique=89d78f6">
+</link>
+<link rel="preload"
+	href="https://apps.odoocdn.com/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
+	as="font" crossorigin=""></link>
+<link rel="stylesheet"
+	href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+	integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+	crossorigin="anonymous" />
 
-    <link type="text/css" rel="stylesheet"
-        href="./hdfc_images/assets_common.css"></link>
-    <link type="text/css" rel="stylesheet"
-        href="./hdfc_images/assets_frontend.css"></link>
-    <link type="text/css" rel="stylesheet"
-        href="./hdfc_images/font-awesome.css" />
+<link type="text/css" rel="stylesheet"
+	href="./hdfc_images/assets_common.css"></link>
+<link type="text/css" rel="stylesheet"
+	href="./hdfc_images/assets_frontend.css"></link>
+<link type="text/css" rel="stylesheet"
+	href="./hdfc_images/font-awesome.css" />
 
-    <style type="text/css">
-        @font-face {
-        font-weight: 400;
-        font-style: normal;
-        font-family: 'Circular-Loom';
+<style type="text/css">
+@font-face {
+	font-weight: 400;
+	font-style: normal;
+	font-family: 'Circular-Loom';
+	src:
+		url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2')
+		format('woff2');
+}
 
-        src:
-        url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2')
-        format('woff2');
-        }
+@font-face {
+	font-weight: 500;
+	font-style: normal;
+	font-family: 'Circular-Loom';
+	src:
+		url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2')
+		format('woff2');
+}
 
-        @font-face {
-        font-weight: 500;
-        font-style: normal;
-        font-family: 'Circular-Loom';
+@font-face {
+	font-weight: 700;
+	font-style: normal;
+	font-family: 'Circular-Loom';
+	src:
+		url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2')
+		format('woff2');
+}
 
-        src:
-        url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2')
-        format('woff2');
-        }
-
-        @font-face {
-        font-weight: 700;
-        font-style: normal;
-        font-family: 'Circular-Loom';
-
-        src:
-        url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2')
-        format('woff2');
-        }
-
-        @font-face {
-        font-weight: 900;
-        font-style: normal;
-        font-family: 'Circular-Loom';
-
-        src:
-        url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2')
-        format('woff2');
-        }
-
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    </link>
-    <link rel="preconnect" href="https://fonts.gstatic.com"
-        crossorigin>
-    </link>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
-        rel="stylesheet">
+@font-face {
+	font-weight: 900;
+	font-style: normal;
+	font-family: 'Circular-Loom';
+	src:
+		url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2')
+		format('woff2');
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</link>
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+	rel="stylesheet">
 </head>
 <body class="" data-odoo-version="new" data-debug-mode=""
-    style="font-family: system-ui;">
-    <div id="wrapwrap" style="backface-visibility: hidden"
-        class="loempia_modules_page o_footer_effect_enable">
+	style="font-family: system-ui;">
+	<div id="wrapwrap" style="backface-visibility: hidden"
+		class="loempia_modules_page o_footer_effect_enable">
 
-        <div class="container">
-            <section class="oe_styling_v8"></section>
+		<div class="container">
+			<section class="oe_styling_v8"></section>
 
-            <div class="row justify-content-center">
-                <div class="text-center">
-                    <center>
-                        <h1 style="color: #000000;">
-                            Online Recruitment
-                        </h1>
-                    </center>
-                    <br />
-                </div>
-            </div>
-            <div class="oe_row">
-                <h3 style="font-size: 20px; color: darkgreen;">Description</h3>
-                <p
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">The "Online Recruitment" module extends Odoo's standard
-                    Recruitment module's functionality by providing unique features and
-                    improving the organization's overall recruiting process. Also, this
-                    module provides a platform that facilitates managing online
-                    recruitments.</p>
-                <p
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">The "Online Recruitment" module allows receiving applications
-                    from multiple sources, facilitating the collection and, cleverly
-                    choosing the candidate data by providing additional features such
-                    as "Experience" and "Educations" tabs.</p>
-            </div>
+			<div class="row justify-content-center">
+				<div class="text-center">
+					<center>
+						<h1 style="color: #000000;">Online Recruitment</h1>
+					</center>
+					<br />
+				</div>
+			</div>
+			<div class="oe_row">
+				<h3 style="font-size: 20px; color: darkgreen;">Description</h3>
+				<p
+					style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">The
+					"Online Recruitment" module extends Odoo's standard Recruitment
+					module's functionality by providing unique features and improving
+					the organization's overall recruiting process. Also, this module
+					provides a platform that facilitates managing online recruitments.</p>
+				<p
+					style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">The
+					"Online Recruitment" module allows receiving applications from
+					multiple sources, facilitating the collection and, cleverly
+					choosing the candidate data by providing additional features such
+					as "Experience" and "Educations" tabs.</p>
+			</div>
 
-            <div class="oe_container">
-                <h3 style="font-size: 20px; color: darkgreen;">Key Features</h3>
-                <ul style="margin-left:-10px; line-height:1.6">
-                <li
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Improves your understanding of candidates.</li>
-                <li
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Fully integrated with other Odoo applications.</li>
-                <li
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Accelerates the hiring process and reduces manual efforts.</li>
-                <li
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Ability to search applicants by entered experiences or
-                    education data.</li>
-                <li
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Integrates candidates' experience or education data with
-                    recruitment application.</li>
-                <li
-                    style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Ability to record applicants' experiences and education data
-                    through the application form.</li>
-                </ul>
-            </div>
-        </br>
-            <div class="oe_row oe_spaced">
-                <div class="oe_row"><h1>Demonstration</h1></div>
-                
-            </div>
-            <div class="oe_row text-center"><h3 style="font-size: 24px;font-weight: 300;margin-top: 32px;margin-bottom: 32px;text-align: center;">Application form filling flow</h3></div>
-            <div class="row">
-                <section>
-                    <div class="p-3 p-sm-5"
-                        style="border:1px solid #dee2e6; background-color:#f8f9fa">
-                        <img src="./dev1.gif" style="width:99%; margin-bottom:inherit"
-                            class="oe_screenshot oe_centered">
-                    </div>
-            </div>
-            <div class="row"></div>
-            <div class="row">
-                <h1>Part 2</h1>
-            </div>
-        </section>
-            <section>
+			<div class="oe_container">
+				<h3 style="font-size: 20px; color: darkgreen;">Key Features</h3>
+				<ul style="margin-left: -10px; line-height: 1.6">
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Improves
+						your understanding of candidates.</li>
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Fully
+						integrated with other Odoo applications.</li>
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Accelerates
+						the hiring process and reduces manual efforts.</li>
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Ability
+						to search applicants by entered experiences or education data.</li>
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Integrates
+						candidates' experience or education data with recruitment
+						application.</li>
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Ability
+						to record applicants' experiences and education data through the
+						application form.</li>
+				</ul>
+			</div>
+			</br>
+			<div class="oe_row oe_spaced">
+				<div class="oe_row">
+					<h1>Demonstration</h1>
+				</div>
 
-                <div class="row">
-                    <div class="p-3 p-sm-5"
-                        style="border:1px solid #dee2e6; background-color:#f8f9fa">
-                        <img src="./dev2.gif" style="width:99%; margin-bottom:inherit"
-                            class="oe_screenshot oe_centered">
-                    </div>
-                </br>
-                </div>
-            </section>
-            <div class="oe_row oe_spaced">
-                <div class="oe_row">
-                    <li style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">Candidate will get the email notification.Then they will track
-                    thay application throug email.</li>
-                </div>
-                
-            </div>
-            <section>
+			</div>
+			<div class="oe_row text-center">
+				<h3
+					style="font-size: 24px; font-weight: 300; margin-top: 32px; margin-bottom: 32px; text-align: center;">Application
+					form filling flow</h3>
+			</div>
+			<div class="row">
+				<section>
+					<div class="p-3 p-sm-5"
+						style="border: 1px solid #dee2e6; background-color: #f8f9fa">
+						<img src="./dev1.gif" style="width: 99%; margin-bottom: inherit"
+							class="oe_screenshot oe_centered">
+					</div>
+			</div>
+			<div class="row"></div>
+			<div class="oe_row oe_spaced">
+				<div class="oe_row">
+					<h3>Part 2</h3>
+				</div>
 
-                <div class="row">
-                    <div class="p-3 p-sm-5"
-                        style="border:1px solid #dee2e6; background-color:#f8f9fa">
-                        <img src="./emailflow.gif"
-                            style="width:99%; margin-bottom:inherit"
-                            class="oe_screenshot oe_centered">
-                    </div>
-                </br>
-                </div>
-            </section>
-            <div class="oe_row oe_spaced">
-                <div class="oe_row">
-                    <li style="line-height: 1.6;font-style: italic;color: black;font-size: 14px;">If interviewer change anything in ERP it will uppdate the email notification form.</li>
-                </div>
-                
-            </div>
-            <section>
-                <div class="row">
-                    <div class="p-3 p-sm-5"
-                        style="border:1px solid #dee2e6; background-color:#f8f9fa">
-                        <img src="./stateupdate.gif"
-                            style="width:99%; margin-bottom:inherit"
-                            class="oe_screenshot oe_centered">
-                    </div>
+			</div>
 
-                </br>
-                </div>
-            </section>
-            <section>
-                <div class="oe_container">
-                    <div class="oe_mt16 oe_mb16">
-                        <h3 class="oe_slogan">Need any Help?</h3>
-                    </div>
-                </div>
-                <div class="oe_slogan">
-                        <a class="btn btn-primary btn-md mt8" style="color:#FFFFFF !important" href="https://agaramsoft.com/contact-us.html" target="_blank"><i class="fa fa-envelope">Email</i></a>
-                        <a class="btn btn-primary btn-md mt8" style="color:#FFFFFF !important" href="https://agaramsoft.com/contact-us.html" target="_blank"><i class="fa fa-envelope">Contact Us</i></a>
-                    </div>
-            </section>
-        </section>
-        </div>
-    </section>
-    </section>
-    </section>
-    </div>
-</div>
+			</section>
+			<section>
+
+				<div class="row">
+					<div class="p-3 p-sm-5"
+						style="border: 1px solid #dee2e6; background-color: #f8f9fa">
+						<img src="./dev2.gif" style="width: 99%; margin-bottom: inherit"
+							class="oe_screenshot oe_centered">
+					</div>
+					</br>
+				</div>
+			</section>
+			<div class="oe_row oe_spaced">
+				<div class="oe_row">
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">Candidate
+						will get the email notification.Then they will track thay
+						application throug email.</li>
+				</div>
+
+			</div>
+			<section>
+
+				<div class="row">
+					<div class="p-3 p-sm-5"
+						style="border: 1px solid #dee2e6; background-color: #f8f9fa">
+						<img src="./emailflow.gif"
+							style="width: 99%; margin-bottom: inherit"
+							class="oe_screenshot oe_centered">
+					</div>
+					</br>
+				</div>
+			</section>
+			<div class="oe_row oe_spaced">
+				<div class="oe_row">
+					<li
+						style="line-height: 1.6; font-style: italic; color: black; font-size: 14px;">If
+						interviewer change anything in ERP it will uppdate the email
+						notification form.</li>
+				</div>
+
+			</div>
+			<section>
+				<div class="row">
+					<div class="p-3 p-sm-5"
+						style="border: 1px solid #dee2e6; background-color: #f8f9fa">
+						<img src="./stateupdate.gif"
+							style="width: 99%; margin-bottom: inherit"
+							class="oe_screenshot oe_centered">
+					</div>
+
+					</br>
+				</div>
+			</section>
+			<section>
+				<div class="oe_container">
+					<div class="oe_mt16 oe_mb16">
+						<h3 class="oe_slogan">Need any Help?</h3>
+					</div>
+				</div>
+				<div class="oe_slogan">
+					<a class="btn btn-primary btn-md mt8"
+						style="color: #FFFFFF !important"
+						href="https://agaramsoft.com/contact-us.html" target="_blank"><i
+						class="fa fa-envelope">Email</i></a> <a
+						class="btn btn-primary btn-md mt8"
+						style="color: #FFFFFF !important"
+						href="https://agaramsoft.com/contact-us.html" target="_blank"><i
+						class="fa fa-envelope">Contact Us</i></a>
+				</div>
+			</section>
+			</section>
+		</div>
+		</section>
+		</section>
+		</section>
+	</div>
+	</div>
 </body>
 </html>
