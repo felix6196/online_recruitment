@@ -9,7 +9,7 @@
     'website': 'https://agaramsoft.com/',
     'images' : ['static/description/icon.png'],
     'license': 'AGPL-3',
-    'price': 22.00,
+    'price': 20.00,
     'currency': 'USD',
     "author": "Agramsoft",
     "sequence": -1,
