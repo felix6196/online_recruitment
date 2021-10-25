@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-{   'name' : 'Hr recruitment',
+{   'name' : 'Online recruitment',
     'version' : '11.0.1.0.0',
-    'summary': 'It helps to connect hr to candidate',
+    'summary': 'It use to make recruiting processes more efficient and less expensive.',
     'sequence': -1,
     'description': """
     """,
