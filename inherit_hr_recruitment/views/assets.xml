@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="custom_assets_editor" name="Website Editor Assets" inherit_id="portal.frontend_layout">
+            <xpath expr="//t[@t-set='head_website']" position="inside">
+                <link rel="stylesheet" href="/inherit_hr_recruitment/static/src/css/website_style.css"/>
+                <script src="/inherit_hr_recruitment/static/src/js/jquery.base64.min.js"/>
+                <script src="/inherit_hr_recruitment/static/src/js/savy.js"/>
+                <script type="text/javascript" src="/inherit_hr_recruitment/static/src/js/custom_validation.js"/>
+                <script src="/inherit_hr_recruitment/static/src/js/jquery.signaturepad.min.js"/>
+                <script src="/inherit_hr_recruitment/static/src/js/jquery.signaturepad.js"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
