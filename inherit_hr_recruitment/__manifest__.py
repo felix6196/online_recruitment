@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+{   'name' : 'Hr recruitment',
+    'version' : '11.0.1.0.0',
+    'summary': 'It helps to connect hr to candidate',
+    'sequence': -1,
+    'description': """
+    """,
+    'category': 'Hr recruitment',
+    'website': 'https://agaramsoft.com/',
+    'images' : 'static/description/icon.png',
+    'license': 'AGPL-3',
+    'price': 1.00,
+    'currency': 'USD',
+    "author": "Agramsoft",
+    "sequence": -1,
+    "depends": [
+        'base',
+        'hr_recruitment',
+        'website',
+    ],
+    "data": [
+        'views/online_enquiry_view.xml',
+        'views/assets.xml',
+        'views/inherit_hr_applicant.xml',
+        'data/mail_template_data.xml',
+    ],
+    "installable": True,
+    'application': True,
+    'auto_install': False,
+}

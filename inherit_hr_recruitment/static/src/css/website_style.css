@@ -1,0 +1,215 @@
+/*Website -> enquiry form */
+.d-none{ display: none}
+.booking-form{ width:84%; margin:0 auto}
+.submit_btn_enq
+{
+	background: #2c3e50 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 0 7px #fff6f6;
+    padding: 10px 22px;
+}
+.enq-form{float: left; width: 100%; border-radius: 5px; padding: 25px; margin:25px 0; box-shadow: 0 0 18px 5px #000; background: #fff}
+.enq-form-track{float: left; width: 100%; border-radius: 5px; padding: 25px; margin:25px 0; box-shadow: 0 0 18px 5px #000; background: #fff; height: 1000px}
+.enq-form .title{ margin: 0 0 25px}
+.enq-form .title.enq-title{ background-color: #16a085; padding: 12px; color:#fff;width: 263px;}
+.enq-form .btn-primary{ margin: 20px auto;  display: block; width: 30%;border-radius: 19px;font-size: 17px;}
+.enq-form label.form-control{ border:none !important; box-shadow: none; font-weight: normal; margin:0}
+.enq-form input.form-control, .enq-form select.form-control{ border-radius: 2px !important; padding: 10px 15px; height: 50px !important}
+/* .enq-form select.form-control{ height:42px !important} */
+.enq-form input:focus, .enq-form select:focus { border: 1px solid #FF5722 !important; box-shadow: none }
+.w-100{ width: 100% !important}
+.ui-datepicker-current-day{ pointer-events: none !important}
+.errmsg {color: #FF5722}
+.form_submit{ display: none}
+.panel-heading{ padding: 0}
+.panel-title a{ padding: 12px 12px 12px 60px; display: block; text-decoration: none}
+.panel-default > .panel-heading{ border-radius: 25px}
+.panel-body, .panel-default{ border: none !important; box-shadow: none}
+.panel-body { width: 99%; margin: 1% 0 1% 1%}
+.panel-title > a{background: #A14EA6 !important; color:#fff; position: relative; border:2px solid #A14EA6}
+.panel-title > a.collapsed{ border: 2px solid #efefef; background:#efefef !important; color: inherit }
+.panel-title > a:before { content: ""; position: absolute; width: 80px; height: 37px; background: #fff; left: 2px; top: 2px;
+    background: url(/pappaya_admission/static/src/icons/exp-coll.png) no-repeat 13px -22px #fff; transition: all .2s linear; 
+    clip-path: polygon(0 0, 65% 0, 36% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 65% 0, 36% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 0, 65% 0, 36% 100%, 0% 100%);
+    -o-clip-path: polygon(0 0, 65% 0, 36% 100%, 0% 100%);
+    -ms-clip-path: polygon(0 0, 65% 0, 36% 100%, 0% 100%);
+}
+.panel-title > a.collapsed:before { background: url(/pappaya_admission/static/src/icons/exp-coll.png) no-repeat 12px 11px #c3c3c3 !important; width:50px;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+  -ms-clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+  -o-clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+}
+.btn.btn-primary { background: #2c3e50 !important; border-color: #fff !important; box-shadow: 0 0 7px #fff; padding: 10px 22px}
+.o_main_navbar{background-color: #16a085 !important; height: auto !important; padding: 8px; border: none !important }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    box-shadow: 0px -5px 0px -2px inset #fd5722;
+}
+.p-15{ padding:15px!important} 
+.m-15{ margin:15px} 
+.mr{ margin-right: 5px !important}
+.justify-content-center{justify-content: center }
+.d-flex{ display: flex !important}
+.border-bottom-1{ border-bottom: 1px solid #ccc}
+.bg-muted{ background: #f5f5f5}
+.enq-btn-container .btn { display: inline-block !important; margin: 15px 5px }
+.payment_status{ font-size: 15px; margin: 0 25px 0 0}
+.payment_status_alert{ width: 40%; margin: 10px auto}
+.btn{ position: relative;}
+/* .btn:hover{ color: rgb(164, 0, 0) !important} */
+.btn:before{ content:""; position: absolute; width:100%; height: 100%; left: 0; top:0; width:0; transition: all .4s ease-out; border-radius: 4px}
+/* .btn:hover:before{ width:100%; background: #fff} */
+.btn:after{ content: ""attr(value)""; position: absolute; left:0; width:100%; text-align: center}
+.position-relative{ position: relative;}
+/****  floating-Lable style start ****/
+.floating-label { position:relative; margin: 5px 0}
+.floating-input , .floating-select {font-size:14px; padding:4px 4px; display:block; width:100%; height:30px; background-color: transparent; border:none; border:1px solid #ccc}
+.floating-input:focus , .floating-select:focus { outline:none; border-bottom:2px solid #5264AE }  
+.floating-label label { color:#999; font-size:14px; font-weight:normal; position:absolute; pointer-events:none; top:8px; transition:0.2s ease all;  -moz-transition:0.2s ease all;  -webkit-transition:0.2s ease all; float: left; width: auto; background-color: #fff; margin: 0 0 0 12px !important; height: auto !important; padding: 6px 5px !important }
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label { top:-15px; font-size:13px; color:#FF5722 }
+.ph-floating, .floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label { top:-18px !important; font-size:13px !important; color:#FF5722 !important}
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+  width:50%;
+}  
+.floating-textarea { min-height: 30px; max-height: 260px; overflow:hidden; overflow-x: hidden }
+/* highlighter */
+.highlight { position:absolute; height:50%;  width:100%; top:15%; left:0; pointer-events:none; opacity:0.5}
+/* active state */
+.floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {-webkit-animation:inputHighlighter 0.3s ease; -moz-animation:inputHighlighter 0.3s ease; animation:inputHighlighter 0.3s ease }
+/* SHIFT */
+#top_menu li a { position:relative; z-index: 1 }
+#top_menu li a:hover { color: #555 }
+#top_menu li a:after { display: block; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; width: 100%; height: 1px; content: '.'; color: transparent; background: #e7e7e7; visibility: none; opacity: 0; z-index: -1 }
+#top_menu li a:hover:after { opacity: 1; visibility: visible; height: 100% }
+#top_menu li a, #top_menu li a:after, #top_menu li a:before { transition: all .5s }
+.file_upload{ width: 108px; float: left}
+.filename{ margin: 5px; float: left}
+.adm-form-num{ color: #FF5722 !important; font-weight: bold; font-size: 18px; clear: both; display: block; margin:5px 0 }
+.adm-form-thxmsg{font-size: 15px; padding: 15px; width: 50%; margin: 15px auto; box-shadow: 0 0 3px #ccc; }
+
+/*Mandatory field UI*/
+select[required], input[required], textarea[required]{ border: 1px solid #16a085 !important; box-shadow: none}
+.datepicker, .datepickers{ background-image: url(/pappaya_theme/static/src/icons/NavTabIcons/DisabledCalendar.png); background-repeat: no-repeat; background-position: 98%; padding: 10px 30px 10px 15px !important }
+.remove_school_history, .remove_parent_details{ display: none; position: absolute; top: -24px; right: -24px; padding: 5px}
+.school-det{ float: left;}
+.school-det .school_history_row, .school-det .parent_details_rows{ float: left; padding-top: 17px; margin: 15px 0; border: 1px solid #ccc}
+.school-det .school_history_row:hover, .school-det .parent_details_rows:hover{ border: 1px dashed #f00;}
+.school-det .school_history_row:hover .remove_school_history, 
+.school-det .parent_details_rows:hover .remove_parent_details { display: block} 
+.mandatory-field{ position: fixed; width: 100%; height: 100%; left: 0; top: 0; z-index: 1001; text-align: center; display: none}
+.mandatory-field p{ position: fixed; color: red; background: #ffede7; top: 25%; left: 40%; padding: 10px; font-size: 20px; border:2px solid #f00}
+@media (max-width: 1024px){
+  .floating-label { margin: 10px 0 !important}  
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file-btn {
+    color: #080808;
+    background-color: #3498db;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 33%;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+
+
+
+
+.floating-input-trac , .floating-select-trac {font-size: 14px;
+    padding: 14px 4px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #4db5dd;}
+.floating-input-trac:focus , .floating-select-trac:focus { outline:none; border-bottom:2px solid #5264AE }  
+.floating-label-trac label { color:#999; font-size:14px; font-weight:normal; position:absolute; pointer-events:none; top:8px; transition:0.2s ease all;  -moz-transition:0.2s ease all;  -webkit-transition:0.2s ease all; float: left; width: auto; background-color: #fff; margin: 0 0 0 12px !important; height: auto !important; padding: 6px 5px !important }
+.floating-input-trac:focus ~ label, .floating-input-trac:not(:placeholder-shown) ~ label { top:-15px; font-size:13px; color:#FF5722 }
+.ph-floating, .floating-select-trac:focus ~ label , .floating-select-trac:not([value=""]):valid ~ label { top:-18px !important; font-size:13px !important; color:#FF5722 !important}
+/* active state */
+.floating-input-trac:focus ~ .bar:before, .floating-input-trac:focus ~ .bar:after, .floating-select-trac:focus ~ .bar:before, .floating-select-trac:focus ~ .bar:after {
+  width:50%;
+} 
+
+.container-trac {
+  width: 100%;
+}
+
+.progressbar-trac {
+  counter-reset: step;
+}
+.progressbar-trac li {
+  list-style: none;
+  display: inline-block;
+  width: 17.33%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.progressbar-trac li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height : 30px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  background-color: #fff;
+}
+.progressbar-trac li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index : -1;
+}
+.progressbar-trac li:first-child:after {
+  content: none;
+}
+.progressbar-trac li.active {
+  color: green;
+}
+.progressbar-trac li.active:before {
+  border-color: green;
+} 
+.progressbar-trac li.active + li:after {
+  background-color: green;
+}
+
+
+.enq-form-track{float: left; width: 100%; border-radius: 5px; padding: 25px; margin:25px 0; box-shadow: 0 0 18px 5px #000; background: #fff}
+.enq-form-track{float: left; width: 100%; border-radius: 5px; padding: 25px; margin:25px 0; box-shadow: 0 0 18px 5px #000; background: #fff; height: 1000px}
+.enq-form-track .title{ margin: 0 0 25px}
+.enq-form-track .title.enq-title{ background-color: #16a085; padding: 12px; color:#fff;width: 263px;}
+.enq-form-track .btn-primary{ margin: 20px auto;  display: block; width: 30%;border-radius: 19px;font-size: 17px;}
+.enq-form-track label.form-control{ border:none !important; box-shadow: none; font-weight: normal; margin:0}
+.enq-form-track input.form-control, .enq-form-track select.form-control{ border-radius: 2px !important; padding: 10px 15px; height: 50px !important}
+/* .enq-form-track select.form-control{ height:42px !important} */
+.enq-form-track input:focus, .enq-form-track select:focus { border: 1px solid #FF5722 !important; box-shadow: none }
+.w-100{ width: 100% !important}
