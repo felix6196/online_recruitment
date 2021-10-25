@@ -7,7 +7,7 @@
     """,
     'category': 'Hr recruitment',
     'website': 'https://agaramsoft.com/',
-    'images' : 'static/description/icon.png',
+    'images' : ['static/description/icon.png'],
     'license': 'AGPL-3',
     'price': 1.00,
     'currency': 'USD',
