@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-{   'name' : 'Smart Job Application Form',
+{   'name' : 'Smart Online Recruitment',
     'version' : '11.0.1.0.0',
     'summary': 'It use to make recruiting processes more efficient and less expensive.',
     'sequence': -1,
